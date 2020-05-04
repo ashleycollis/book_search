@@ -1,13 +1,13 @@
 const prompt = require('prompt');
+const readline = require('readline').createInterface({
+  input: process.stdin,
+  output: process.stdout,
+});
 
-displayBook = function () {
-  prompt.start();
-  prompt.get(['Query'], function (err, result) {
-    if (err) {
-      return onErr(err);
-    }
-    console.log('Command-line input received:');
-    console.log('query: ' + result.query);
+const displayBook = function () {
+  readline.question(`What book are you looking for?`, (book) => {
+    console.log(`Retrieving results matching your search for ${book}!`);
+    readline.close();
   });
 };
 
