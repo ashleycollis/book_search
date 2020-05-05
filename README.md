@@ -1,79 +1,31 @@
 # Google Books Command Line Search
 
-A command line application that allows you to use the Google Books API to search for books and construct a reading list. Each item in the list includes the book's author, title, and publishing company.
+A command line application that allows users to search for books on Google Books and add to a personal reading list. The search returns 5 books from the Google Books API.
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running
+The following commands will run the application:
 
-Say what the step will be
+> npm install - Adds the dependencies and sets up the project
 
-```
-Give the example
-```
+> node index.js - Starts the application on the command line
 
-And repeat
+### Application View
 
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
+![cliview](https://user-images.githubusercontent.com/53953519/81082800-c39e8680-8ec1-11ea-8774-07994d860e5d.png)
 
 ## Running the tests
 
-Explain how to run the automated tests for this system
+> npm test - Runs the tests
 
-### Break down into end to end tests
+## Author
 
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
+Ashley Collis-Burgess
 
 ```
-Give an example
+
 ```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
-
-## Built With
-
-- [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-- [Maven](https://maven.apache.org/) - Dependency Management
-- [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags).
-
-## Authors
-
-- **Billie Thompson** - _Initial work_ - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc

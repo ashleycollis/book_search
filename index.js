@@ -9,12 +9,13 @@ const readline = require('readline').createInterface({
 
 const displayBook = function () {
   return new Promise((resolve, reject) =>
-    readline.question(`What book are you looking for? `, async (book) => {
+    readline.question(`What book would you like to find? `, async (book) => {
       console.log(`Retrieving results matching your search for ${book}!`);
-      await findBook(book);
-      console.log('Top 5 Results:');
+      await findBook(book); //the Google Books API called returning 5 results
+      console.log('-----------------');
+      console.log(`Top ${bookResults.length} Results:`);
       console.log(bookResults);
-      console.log('------');
+      console.log('-----------------');
       resolve();
     })
   );
@@ -23,10 +24,10 @@ const displayBook = function () {
 const addToList = function () {
   return new Promise((resolve, reject) =>
     readline.question(
-      `Please select the number of the book that you'd like to add to your Reading List `,
+      `Please enter the number of the book that you'd like to add to your Reading List: `,
       async (book) => {
         console.log(`The ${book} has been added to your Reading List!`);
-        console.log('is this resolved', bookResults);
+        console.log(bookResults);
         readingList.push(JSON.stringify(bookResults[book - 1]));
         console.log('Here is your reading list:');
         console.log(readingList[0]);
